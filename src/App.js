@@ -116,7 +116,7 @@ function App() {
         </div>
         <header>
           <span> Know me more</span>
-          <h1>Benzaima Fadi</h1>
+          <h1>Fadi Benzaima</h1>
           <span className='Date'>{formattedDate}</span>
           <hr />
         </header>
