@@ -59,6 +59,10 @@ p{
   margin: 0;
 }
 
+p {
+  line-height: 1.6;
+}
+
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
