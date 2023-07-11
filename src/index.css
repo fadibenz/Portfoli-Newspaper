@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "ITC cushing std";
+  src: url("./Fonts/ITC cushing std/CushingStd-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC cushing std";
+  src: url("./Fonts/ITC cushing std/CushingStd-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ITC cushing std";
+  src: url("./Fonts/ITC cushing std/CushingStd-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC cushing std";
+  src: url("./Fonts/ITC cushing std/CushingStd-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ITC cushing std";
+  src: url("./Fonts/ITC cushing std/CushingStd-Heavy.ttf");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Billie crimson";
+  src: url("./Fonts/Billie\ crimson/billiecrimsondemo-rgz99.otf");
+}
+
+@font-face {
+  font-family: "Rollking";
+  src: url("./Fonts/Rollking/RollKingDemoRegular.ttf")
+}
+
+
+@font-face {
+  font-family: "GT alpina";
+  src: url("./Fonts/GTalpina/GT-Alpina-Typewriter-Thin-Trial.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT alpina";
+  src: url("./Fonts/GTalpina/GT-Alpina-Typewriter-Light-Italic-Trial.otf");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GT alpina";
+  src: url("./Fonts/GTalpina/GT-Alpina-Typewriter-Regular-Trial.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT alpina";
+  src: url("./Fonts/GTalpina/GT-Alpina-Typewriter-Medium-Trial.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT alpina";
+  src: url("./Fonts/GTalpina/GT-Alpina-Typewriter-Bold-Trial.otf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gräbenbach";
+  src: url("./Fonts/Gräbenbach/GraebenbachMono-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue";
+  src: url("./Fonts/Neue.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: "Neue" ;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F7F6F2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
