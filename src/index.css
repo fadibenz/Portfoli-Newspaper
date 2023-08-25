@@ -98,10 +98,10 @@
 
 body {
   margin: 0;
-  font-family: "Neue" ;
+  /* font-family: 'Inter', sans-serif; */
+font-family: 'Space Grotesk', sans-serif;
   font-style: normal;
   font-weight: 400;
-  /* line-height: 3em; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F7F6F2;

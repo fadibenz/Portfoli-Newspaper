@@ -265,40 +265,15 @@ padding: 1em;
   max-width: 470px;
 }
 .About--me .Dash{
-  margin-bottom: 2em;
-}
-
-.About--me__info{
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-}
-
-.M{
-  /* width: 48%; */
-  /* border-right: dashed 1px var(--clr-primary-3) ; */
-  /* padding-right: 1em; */
-}
-
-.Second--p{
-  /* width:48%; */
-}
-
-.M div{
-  display: flex;
-  gap: 2em;
-  align-items: center;
+  margin-bottom: 0.5em;
 }
 
 .M--letter{
-  font-size: var(--ff-600);
+  font-size: 2rem;
   font-family: 'ITC cushing std';
-  height: fit-content;
 }
-
-.About--me video{
-  margin-top: 2em;
-  border-radius: 500px;
+.Second--p {
+  margin-top: .5em;
 }
 /* SKILLS */
 
@@ -570,7 +545,7 @@ Footer img{
 
 .Projects-card__single{
   padding: 1em;
-  min-width: 500px;
+  min-width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -586,7 +561,7 @@ Footer img{
 
 
 .Projects-card__single img {
-  min-width: 400px;
+  min-width: 500px;
   height: 240px;
   object-fit: cover;
   border-radius: var(--radius);
@@ -616,7 +591,7 @@ Footer img{
 
 .Projects-card__single p {
   color: var(--clr-primary-2);
-  max-width: 450px;
+  max-width: 550px;
   text-align: center;
 }
 .Projects-card__single h2 {

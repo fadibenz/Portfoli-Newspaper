@@ -11,7 +11,6 @@ import twitter from "./Icons/twitter.svg";
 import Esi from "./Resources/Esi-sba.jpg";
 import Web from "./Resources/Web.png";
 
-
 function App() {
   const [explore, setExplore] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -56,33 +55,50 @@ function App() {
   const projects = [
     {
       id: 1,
-      name: "Sneakers",
-      desc: `I strated this project to enhance my react skills, it is built with the latter technology where i used most of it is core features like hooks, React router,state managment tools and more. The design is inspired by a Front-End mentor challenge and the backend is handled by Express`,
-      img: "/sneakers--website.png",
-      link: "https://sneakers-iadx.onrender.com/",
-      Tags: ["React js", "React Router", "Express js", "Axios", "Figma"],
+      name: "Fadi's Blog",
+      desc: `This is CRUD single-page React application.
+      The front-end is handled with React and Redux Toolkit for state management, Tailwind CSS and Chakra UI for styling.
+      The back-end is an express server with a MongoDB databse .The server's endpoints are tested with Jest and Supertest.
+      The application successfully passed an End-to-End testing with Cypress.`,
+      link: "https://benzaimafadi.netlify.app/",
+
+      img: "/Blog.png",
+      Tags: [
+        "ReactJS",
+        "Redux",
+        "Tailwind CSS",
+        "Chakra UI",
+        "ExpressJS",
+        "Jest",
+        "Cypress",
+      ],
     },
     {
       id: 2,
-      name: "Portfolio",
-      desc: ` This is my first ever web project, and my former portfolio
-                    page where i used Vanilla HTML, javaScript and CSS. i built
-                    it while learning the core features of the latter
-                    tehcnologies.`,
-      link: "https://benzaimafadi.netlify.app/",
-
-      img: "/Portfolio.png",
-      Tags: ["Vanilla JavaScript", "Bootstrap"],
+      name: "Helsenki Excercises",
+      desc: `As part of my enrollment in the Open University provided by the University of Helsinki, I've engaged with over 50 reading materials and completed more than 140 exercises. The primary focus was on mastering single-page applications using React and complementing them with RESTful web services built on Node.js.`,
+      img: "/certificate-fullstack.png",
+      link: "https://github.com/fadibenz/My-Submissions",
+      Tags: [
+        "ReactJS",
+        "Redux",
+        "Tailwind CSS",
+        "Chakra UI",
+        "ExpressJS",
+        "Jest",
+        "Cypress",
+        "MongoDB",
+      ],
     },
     {
       id: 3,
       name: "E-VENTI",
-      desc: ` This is my second year project, a website for exploring and
-                    organizing events, i build it with my teammate using React,
-                    TypeScript, Vite and Tailwind CSS. The backend was handled
-                    by .NET.`,
+      desc: ` E-VENTI is a comprehensive full-stack event management system that we developed as part of our second-year interdisciplinary project.
+       it uses React, TypeScript, Vite and Tailwind CSS for the Front-End. 
+       The Back-End was handled by .NET.
+        I followed best practices in the organisation of code, notification system, using custom hooks, React router and the connection with the server where I used Axios.`,
       img: "/E-VENTI.png",
-      link: "",
+      link: "https://github.com/fadibenz/E-VENTI_Front-End",
       Tags: [
         "React",
         "TypeScript",
@@ -94,6 +110,14 @@ function App() {
     },
     {
       id: 4,
+      name: "Sneakers",
+      desc: `This project is more focused on the UI than functionnalities as most of them are not implemented, I strated it  to enhance my React and CSS skills, it is built with the latter technology where i used most of it is core features. The design is inspired by a Front-End mentor challenge.`,
+      img: "/sneakers--website.png",
+      link: "https://sneakers-iadx.onrender.com/",
+      Tags: ["React js", "React Router", "CSS3", "Axios", "Figma"],
+    },
+    {
+      id: 5,
       name: "Discord Bot",
       desc: `a finance discord bot built with discord.js, i built this
                     bot as part of my journey learning JavaScript and Node.js `,
@@ -132,11 +156,11 @@ function App() {
                 <h2>ESI-SBA</h2>
                 <p>
                   I’m currently a third year student in the{" "}
-                  <span >higher school</span> of computer
-                  science, Sidi-Bel-Abbes. Where i'm studying to get an
-                  ingeunirat in CS.
+                  <span>higher school</span> of computer science,
+                  Sidi-Bel-Abbes. Where i'm studying to get an engineering
+                  degree in CS.
                 </p>
-                <span className="Light">2021-2026</span>
+                <span className='Light'>2021-2026</span>
               </div>
             </article>
             <article className='Know-me-more'>
@@ -144,14 +168,15 @@ function App() {
                 <h2>Know me more</h2>
                 <span className='Dash'></span>
                 <p>
-                  I’m the Co-host of the AlphaGeeks , each week i interview
+                  I’m the Co-host of the AlphaGeeks podcast, I interview
                   pioneering people in tech and enterpeneurship.
                 </p>
+                {/* <span className='Dash'></span>
+                <p>native Arabic speaker, fluent English , fluent French.</p> */}
                 <span className='Dash'></span>
                 <p>
-                  I’m passionate about design and giving my websites an original
-                  feel and look, basing that on color and theme choice and
-                  moreover code implementation.
+                  intrested in AI and machine learning, avid reader of
+                  philosophy and political thought.
                 </p>
                 {/* <span className='Dash'></span>
                 <p>I love philosophy, astronomy, music and arabic poetry.</p> */}
@@ -168,108 +193,76 @@ function App() {
             </span>
             <span className='Dash'></span>
             <article className='About--me__info'>
-              <div className='M'>
-                <div>
-                  <p className='M--letter'>M</p>
-                  <p>
-                    Y name is Benzaima Fadi, I’m a junior{" "}
-                    <span className='DO-ME'>web devoloper</span> 
-                     {' '}using cutting-edge technologies like React, Redux and more.
-                  </p>
-                </div>
+              <div>
+                <p>
+                  <span className='M--letter'>M</span>y name is Benzaima Fadi,
+                  I’m a results-oriented Front-End{" "}
+                  <span className='DO-ME'>web developer</span> with proven track
+                  record in communication, team-work and leadership, delivering
+                  value in web design, development, production, testing and
+                  deployment.
+                </p>
               </div>
               <p className='Second--p'>
-                An online identity is a must nowadays, and with my skills and
-                expertise i will bring yours to the next level. My academic
-                background and constant will to learn new technologies are all
-                factors that will allow me to give you the{" "}
-                <span >best product possible.</span>
+                I wanted the design to reflect my love for newspapers, I still
+                remember waiting up for my dad to bring the day's newspaper to
+                read about what's happening in the world, so my portfolio is
+                conveniently inspired by an old newspaper feel
+              </p>
+              <p className='Second--p'>
+                All over this page you will find informations about me, my
+                education, skills, certifications and some news ! the titles are
+                click baits for a reason.
+              </p>
+              <p className='Second--p'>
+                <span className='DO-ME'>Wait....</span> don't forget to check my
+                projects they are hanging out just over there.
               </p>
             </article>
             {/*  */}
-            <img className='SideEye' src='/sideeye.jpg'></img>
+            {/* <img className='SideEye' src='/sideeye.jpg'></img> */}
             {/* <span>Eunoia</span> */}
           </section>
           <section className='Skills'>
-            <img src={Web} />
-
             <h2>SKILLS</h2>
             <h1>"It's a process"</h1>
-            <p className='Thin-text'>
+            {/* <p className='Thin-text'>
               below are some of my self-tought skills or ones i gathered from my
               academic studies.
-            </p>
+            </p> */}
             <article className='Front--article'>
-              <h3>Frontend:</h3>
+              <h3>Front-End:</h3>
               <ul>
                 <li>
-                  <span className='DO-ME'>React and Redux</span>
+                  <span className='DO-ME'>ReactJS</span>
                 </li>
-                <li>Vanilla JavaScript </li>
-                <li>Tailwind CSS</li>
-                <li>CSS3 and Sass</li>
-                <li>HTML5</li>
+                <li>Redux & Context API</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS & Sass</li>
+                <li>Webpack & Vite</li>
+                <li>CSS3 & CSS modules</li>
               </ul>
             </article>
             <span className='Dash'></span>
             <article>
-              <h3>Backend:</h3>
+              <h3>Other:</h3>
               <ul>
-                <li>Node with express</li>
+                <li>Express & NodeJS</li>
                 <li>MongoDB</li>
-                <li>Mysql</li>
-                <li>Git and Github</li>
+                <li>Jest & Cypress</li>
+                <li>Git & Github</li>
+                <li>Python</li>
               </ul>
             </article>
+            <img src={Web} />
           </section>
         </article>
         <article>
-          <section className='News'>
-            <div className='USA '>
-              <div className='IMG'>
-                <img src='/Harvard.jpg'></img>
-              </div>
-              <div className='TALK'>
-                <header>
-                  <h3>TRAVEL</h3>
-                  <h1>I studied At the USA, here's how!</h1>
-                </header>
-                <p>
-                  I am an alumna of the rigorous Leadership and Civic Engagement
-                  program, 'Study of the US Institutes for student leaders'
-                  where I spent the summer of 2023 at the University of
-                  Massachusetts. During this program, I had the opportunity to
-                  expand my knowledge in leadership, entrepreneurship and more.
-                  I attended conferences and visited esteemed institutions such
-                  as Harvard and MIT. I also had the privlige of conducting my
-                  study tour in Detroit, Michigan.
-                </p>
-              </div>
-            </div>
-          </section>
           <section className='Resume'>
             <p>Download my resume with all my information from here</p>
             <a href='./Benzaima.pdf' download>
               <b>Resume here</b>
             </a>
-          </section>
-
-          <section className='Reviews'>
-            <h2>
-              <i>Reviews for my Web work:</i>
-            </h2>
-            <article className='Reviews--cnt'>
-              {reviews.map((review) => {
-                const { id, name, title, desc } = review;
-                return (
-                  <article className='Single--review' key={id}>
-                    <h3>{name}</h3>
-                    <span>{title}</span>
-                    <p>{desc}</p>
-                  </article>
-                );
-              })}
-            </article>
           </section>
         </article>
       </main>
@@ -312,7 +305,7 @@ function App() {
                     <hr></hr>
                     <div>
                       <img src={project.img} />
-                      <h2>Sneakers Website</h2>
+                      <h2></h2>
                       <p>{project.desc}</p>
 
                       <div className='TagCnt'>
@@ -336,7 +329,7 @@ function App() {
         <section className='Footer--main'>
           <article className='Footer--info'>
             <h2>GET IN TOUCH</h2>
-            <i>to get the website of your dreams!</i>
+            <p>You have news you want to share ?</p>
           </article>
           <section className='Social--container'>
             <a
