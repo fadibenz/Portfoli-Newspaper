@@ -60,8 +60,7 @@ function App() {
       The front-end is handled with React and Redux Toolkit for state management, Tailwind CSS and Chakra UI for styling.
       The back-end is an express server with a MongoDB databse .The server's endpoints are tested with Jest and Supertest.
       The application successfully passed an End-to-End testing with Cypress.`,
-      link: "https://benzaimafadi.netlify.app/",
-
+      link: "https://blog-website-j2ek.onrender.com/",
       img: "/Blog.png",
       Tags: [
         "ReactJS",
