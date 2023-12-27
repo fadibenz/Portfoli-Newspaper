@@ -10,6 +10,7 @@ import twitter from "./Icons/twitter.svg";
 
 import Esi from "./Resources/Esi-sba.jpg";
 import Web from "./Resources/Web.png";
+import Me from "./Resources/IMG_6480.jpg";
 
 function App() {
   const [explore, setExplore] = useState(false);
@@ -134,15 +135,14 @@ function App() {
   return (
     <div className='App'>
       <nav>
-        <div className='Nav--button'>
-          <HiMenuAlt1 className='Nav--icon' />
-        </div>
         <header>
           <span> Know me more</span>
-          <h1>Fadi Benzaima</h1>
+          <h1>
+            <span className='Underline'> Fadi Benzaima</span>
+          </h1>
           <span className='Date'>{formattedDate}</span>
-          <hr />
         </header>
+        <hr />
       </nav>
       <main>
         <article className='Information'>
@@ -151,15 +151,18 @@ function App() {
             <article className='Education'>
               <img src={Esi} />
               <div>
-                <h2 className='Education--title'>Education</h2>
-                <h2>ESI-SBA</h2>
+                <h2 className='Education--title'>
+                  <span className='reverse-underline'>Education</span>
+                </h2>
+                <h3>
+                  <span className='Underline'>ESI, Sidi-Bel-Abbes.</span>
+                </h3>
                 <p>
-                  I’m currently a third year student in the{" "}
-                  <span>higher school</span> of computer science,
-                  Sidi-Bel-Abbes. Where i'm studying to get an engineering
-                  degree in CS.
+                  I’m currently a third year student in the Ecole Superieure en
+                  Informatique, Sidi-Bel-Abbes. Where i'm studying to get an
+                  engineering degree in CS.
                 </p>
-                <span className='Light'>2021-2026</span>
+                <span className='Light'>2021 - 2026</span>
               </div>
             </article>
             <article className='Know-me-more'>
@@ -167,7 +170,16 @@ function App() {
                 <h2>Know me more</h2>
                 <span className='Dash'></span>
                 <p>
-                  I’m the Co-host of the AlphaGeeks podcast, I interview
+                  I’m the Co-host of the{" "}
+                  <a
+                    className='Underline'
+                    href='https://open.spotify.com/show/6rqGfwSFXM5RqV602PIVyP?si=c81e3e9ed07343e4'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    Bitwise
+                  </a>
+                  <span className='BitWise'>*</span> podcast, I interview
                   pioneering people in tech and enterpeneurship.
                 </p>
                 {/* <span className='Dash'></span>
@@ -184,8 +196,15 @@ function App() {
           </section>
           <section className='About--me Left--border'>
             <img src='/mainPic.jpg' />
-            <h3>ABOUT ME</h3>
-            <h2>Dedicated, ambitious, always an amateur.</h2>
+            <h2>
+              {" "}
+              <span className='reverse-underline'>ABOUT ME</span>
+            </h2>
+            <h3>
+              <span className='Underline'>
+                Dedicated, ambitious, always an amateur.
+              </span>
+            </h3>
             <span className='Thin-text'>
               “In order for connection to happen, we have to allow ourselves to
               be seen— <span className='DO-ME'>really seen</span>.”
@@ -194,37 +213,30 @@ function App() {
             <article className='About--me__info'>
               <div>
                 <p>
-                  <span className='M--letter'>M</span>y name is Benzaima Fadi,
+                  <span className='M--letter'>M</span>y name is Fadi Benzaima,
                   I’m a results-oriented Front-End{" "}
-                  <span className='DO-ME'>web developer</span> with proven track
-                  record in communication, team-work and leadership, delivering
-                  value in web design, development, production, testing and
-                  deployment.
+                  <span className='DO-ME'>web developer</span> with a a global
+                  prespective through enriching experiences in Algeria, Finland
+                  and the United States. I have comprehensive experience in
+                  modern web development, <img src={Me}></img> creating web
+                  applications using React and complementing them with web
+                  services built on Node.js. <span className='SpaceUp'></span>
+                  <span className='DO-ME'>I aimed </span> to give the design a
+                  touch of my fondness for newspapers. I remember waiting for my
+                  dad to bring home the daily newspaper so I could catch up on
+                  what's happening in the world. Hence, my portfolio is
+                  influenced by the old-school newspaper vibe.
                 </p>
               </div>
-              <p className='Second--p'>
-                I wanted the design to reflect my love for newspapers, I still
-                remember waiting up for my dad to bring the day's newspaper to
-                read about what's happening in the world, so my portfolio is
-                conveniently inspired by an old newspaper feel
-              </p>
-              <p className='Second--p'>
-                All over this page you will find informations about me, my
-                education, skills, certifications and some news ! the titles are
-                click baits for a reason.
-              </p>
-              <p className='Second--p'>
-                <span className='DO-ME'>Wait....</span> don't forget to check my
-                projects they are hanging out just over there.
-              </p>
             </article>
-            {/*  */}
-            {/* <img className='SideEye' src='/sideeye.jpg'></img> */}
-            {/* <span>Eunoia</span> */}
           </section>
           <section className='Skills'>
-            <h2>SKILLS</h2>
-            <h1>"It's a process"</h1>
+            <h2>
+              <span className='reverse-underline'>SKILLS</span>
+            </h2>
+            <h3>
+              <span className='Underline'>"It's a process"</span>
+            </h3>
             {/* <p className='Thin-text'>
               below are some of my self-tought skills or ones i gathered from my
               academic studies.
@@ -259,14 +271,16 @@ function App() {
         <article>
           <section className='Resume'>
             <p>Download my resume with all my information from here</p>
-            <a href='./Benzaima.pdf' download>
-              <b>Resume here</b>
+            <a href='./Fadi-Benzaima.pdf' download>
+              Resume here
             </a>
           </section>
         </article>
       </main>
       <aside>
         <section className={`Explore--bar ${explore && "Hide--explore"}`}>
+          <button className='News--scroll Layer--2'></button>
+          <button className='News--scroll Layer--3'></button>
           <button
             className='News--scroll Layer--1'
             onClick={() => {
@@ -278,8 +292,6 @@ function App() {
               <MdOutlineArrowForwardIos className='Projects--title__arr' />
             </div>
           </button>
-          <button className='News--scroll Layer--2'></button>
-          <button className='News--scroll Layer--3'></button>
         </section>
         <section className={`Projects--cnt ${!explore && "Hide--explore"}`}>
           <button
@@ -327,8 +339,10 @@ function App() {
       <footer>
         <section className='Footer--main'>
           <article className='Footer--info'>
-            <h2>GET IN TOUCH</h2>
-            <p>You have news you want to share ?</p>
+            <h2>
+              <span className='Underline'>GET IN TOUCH</span>
+            </h2>
+            <p>Any news to share ?</p>
           </article>
           <section className='Social--container'>
             <a
@@ -363,9 +377,9 @@ function App() {
         </section>
         <section className='Footer--secondary'>
           <hr></hr>
-          <span>Copyright 2023</span>
+          <span className='reverse-underline-black'>Copyright 2023</span>
           <span className='Dote'>.</span>
-          <span>Benzaima fadi</span>
+          <span className='reverse-underline-black'>Fadi Benzaima</span>
         </section>
       </footer>
     </div>
