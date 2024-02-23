@@ -123,7 +123,7 @@ function Main() {
                     bot as part of my journey learning JavaScript and Node.js `,
       img: "/Discord--bot.png",
       link: "https://github.com/fadibenz/aurelius-bot",
-      Tags: ["Node js", "Discord js"],
+      Tags: [],
     },
   ];
   const formattedDate = currentDate.toLocaleDateString("en-US", {
