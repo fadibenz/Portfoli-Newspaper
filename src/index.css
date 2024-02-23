@@ -94,6 +94,15 @@
 }
 
 
+@font-face {
+  font-family: "Muggle";
+  src: url("./Fonts/mugglenews_by_nathanthenerd_d41qn8p.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 
 
 body {

@@ -1,0 +1,140 @@
+.intropage {
+  width: 55vw;
+  overflow: hidden;
+}
+
+.Header {
+  margin-top: 2em;
+  margin-inline: auto;
+  display: grid;
+  width: 95%;
+  text-align: center;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: 1em;
+  grid-template-columns: 1fr 3fr 1fr;
+
+  h1 {
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    /* margin-top: .3rem; */
+    /* font-family: 'Muggle'; */
+    span {
+      color: #dd3418;
+    }
+  }
+  img {
+    margin-bottom: 0;
+    max-width: 110px;
+    justify-self: flex-end;
+    filter: grayscale(0);
+  }
+}
+
+.Header-Logo {
+  display: grid;
+}
+
+.Header_additional {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  p {
+    font-size: 0.8rem;
+    width: fit-content;
+    height: fit-content;
+
+    font-weight: 500;
+  }
+}
+
+.Header_lines {
+  position: relative;
+  div {
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #f7f6f2;
+    top: -17px;
+    right: 45%;
+  }
+
+  p {
+    font-family: "ITC cushing std";
+    font-style: italic;
+  }
+}
+
+.Header_lines-bold {
+  height: 3px;
+  background-color: black;
+  margin-block: 2px;
+}
+
+.Header_content {
+  p {
+    font-size: 1rem;
+    /* margin-block: 0.3em; */
+    font-weight: 500;
+  }
+}
+
+.Header_content-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.Words {
+  position: relative;
+  height: 80vh;
+  border: solid black;
+  border-top: none ;
+  p {
+    font-size: 1.7rem;
+    font-family: "GT alpina";
+    font-weight: 800;
+  }
+}
+
+.Words-1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  opacity: 0;
+
+}
+
+.Words p:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  opacity: 0;
+
+}
+
+.Words div {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 10px;
+  top: 70%;
+  left: 60%;
+  opacity: 0;
+
+  img {
+    width: 43px;
+    height: 22px;
+    margin-bottom: 0;
+  }
+}
