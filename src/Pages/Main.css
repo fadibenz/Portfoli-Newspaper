@@ -1,4 +1,3 @@
-
 .Underline {
   display: inline;
   background-image: linear-gradient(transparent, transparent),
@@ -77,7 +76,6 @@ nav hr {
 /* Main */
 
 /* ===== information section =====*/
-
 
 .Information {
   display: flex;
@@ -224,9 +222,7 @@ nav hr {
   width: 120px;
 }
 
-
-@media (max-width:500px) {
-
+@media (max-width: 500px) {
 }
 /* SKILLS */
 
@@ -453,13 +449,12 @@ Footer img {
 }
 
 .Layer--1 {
-
   background-color: transparent;
   border: none;
 }
 
 .Layer--Move {
-      z-index: 4;
+  z-index: 4;
 }
 .Layer--2 {
   box-shadow: -10px -10px 20px -10px rgba(0, 0, 0, 0.3);
@@ -564,6 +559,42 @@ Footer img {
 .Projects-card__single:not(:first-child) {
   margin-left: -130px;
   z-index: 2;
+}
+
+@media (max-width: 500px) {
+  .Projects--card__container {
+    flex-direction: column;
+  }
+  .Projects--cnt {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .Projects-card__single:hover ~ .Projects-card__single {
+    transform: translateX(0);
+  }
+
+  .Projects-card__single:not(:first-child) {
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  .Projects-card__single {
+    width: 100%;
+    transform: 0;
+    min-width: initial;
+  }
+
+  .Projects-card__single p {
+    padding: 0.5em;
+    max-width: initial;
+    text-align: center;
+  }
+
+  .Projects-card__single img {
+    min-width: initial;
+    width: 500px;
+  }
 }
 
 .Checkout--btn {
@@ -848,13 +879,16 @@ p {
   }
 
   .Layer--1 {
-       background-color: rgb(28, 25, 25) ;
-       border-radius: 200px; 
-       width: 230px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 70px;
+    background-color: rgb(28, 25, 25);
+    border-radius: 200px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  .Explore--bar:hover .Layer--Move {
+    transform: translateX(0);
   }
   .News--scroll {
     height: 70px;
@@ -870,7 +904,6 @@ p {
   }
   .Projects--title {
     flex-direction: row;
-    
   }
   .Projects-card__single:not(:first-child) {
     margin-left: initial;
@@ -925,8 +958,7 @@ p {
   margin-top: 0.9em;
 }
 
-
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .About--me__info img {
     float: none;
     width: 100%;
